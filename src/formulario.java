@@ -27,18 +27,9 @@ public class formulario {
         borrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                textField1.setText(" ");
+                textField1.setText("");
                 passwordField1.setText("");
             }
         });
-    }
-
-    public static void main(String[] args) {
-        // Crear y mostrar el formulario
-        JFrame frame = new JFrame("Formulario");
-        frame.setContentPane(new formulario().mainPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
     }
 }
