@@ -22,10 +22,16 @@ public class Main
         JOptionPane.showMessageDialog( null, "La multiplicación es " + multiplicacion, "Multiplicación de dos enteros", JOptionPane.PLAIN_MESSAGE );
         JOptionPane.showMessageDialog( null, "La división es " + division, "División de dos enteros", JOptionPane.PLAIN_MESSAGE );*/
 
-        JFrame frame = new JFrame("Mi aplicación");
-        frame.setContentPane(new form_1().mainPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        /*JFrame frame = new JFrame("Calculadora");
+        frame.setContentPane(new form_2().mainCalculadora);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);*/
+
+        JFrame frame = new JFrame("Formulario");
+        frame.setContentPane(new formulario().mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
 
